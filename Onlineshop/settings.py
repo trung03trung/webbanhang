@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
 from pathlib import Path
-from os import environ
-SECRET_KEY = environ['secret_key']
+
+import os
 import django_heroku
 django_heroku.settings(locals())
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
